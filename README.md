@@ -36,7 +36,7 @@ yarn server
 and it will listen for requests on port **5555**, for example:
 
 ```http
-GET http://localhost:5000/parts
+GET http://localhost:5555/parts
 ```
 
 ### Using Dependencies
