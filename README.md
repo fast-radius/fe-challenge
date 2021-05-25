@@ -72,14 +72,14 @@ Later in the interview process, we'll ask you to add functionality onto this pro
 Get part data with a `GET` request to `/parts`:
 
 ```http
-GET /parts/?pageNumber=1
+GET /parts/?page=1
 ```
 
 #### URL Params:
 
 | Parameter    | Type      | Description                  |
 | :----------- | :-------- | :--------------------------- |
-| `pageNumber` | `integer` | specify which page to render |
+| `page` | `integer` | specify which page to render |
 
 #### Response:
 
