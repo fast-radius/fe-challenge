@@ -20,7 +20,7 @@ const pageSize = 5;
 
 const getPage = (pageNumber) => {
   const startingIndex = (pageNumber - 1) * pageSize;
-  const endingIndex = startingIndex + (pageSize - 1);
+  const endingIndex = startingIndex + pageSize;
   return parts.slice(startingIndex, endingIndex);
 };
 
