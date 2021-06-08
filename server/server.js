@@ -1,5 +1,5 @@
 const express = require('express');
-const { parts } = require(__dirname + '/data.js');
+const { parts, manufacturingProcesses } = require(__dirname + '/data.js');
 
 const app = express();
 app.use(express.json());
@@ -36,6 +36,10 @@ app.get('/parts', (req, res) => {
   res.setHeader('total-pages', totalPages);
 
   return res.json({ data: result });
+});
+
+app.get('/manufacturing_processes', (req, res) => {
+  return res.json({ data: manufacturingProcesses });
 });
 
 app.put('/parts/:id', (req, res) => {
